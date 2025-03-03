@@ -8,8 +8,8 @@ const TodoList = ({ tasks, toggleTaskCompletion, toggleRemoveTask }) => {
         <TodoItem
           key={index}
           task={task}
-          toggleTaskCompletion = {()=> toggleTaskCompletion(index)}
-          toggleRemoveTask = {()=> toggleRemoveTask(index)}
+          toggleTaskCompletion={() => toggleTaskCompletion(index)}
+          toggleRemoveTask={() => toggleRemoveTask(index)}
         />
       ))}
     </ul>
